@@ -1,10 +1,11 @@
 import React from 'react';
+import PagesBasis from '../../../components/PagesBasis/index.js';
 
 function CadastroVideo () {
     return (
-        <div>
+        <PagesBasis>
             Página de Cadastro de Vídeo
-        </div>
+        </PagesBasis>
     );
 }
 
