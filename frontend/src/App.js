@@ -1,9 +1,10 @@
 import React from 'react';
+import Menu from './components/Menu/index.js';
 
 function App() {
   return (
     <div>
-      Imersão React - Alura
+      <Menu />
     </div>
   );
 }
