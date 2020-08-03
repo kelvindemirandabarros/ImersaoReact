@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import PageDefault from '../../../components/PagesBasis/index.js';
-import FormField from '../../../components/FormField/index.js';
+import PageDefault from '../../../components/PagesBasis/index.jsx';
+import FormField from '../../../components/FormField/index.jsx';
+import Button from '../../../components/Button/index.jsx';
 
 function CadastroCategoria() {
   const initialValues = {
@@ -38,7 +39,7 @@ function CadastroCategoria() {
       }}>
 
         <FormField 
-          labelText={ 'Nome da Categoria:' }
+          labelText={ 'Nome da Categoria' }
           type={ 'text' }
           value={ category.name }
           name={ 'name' }
@@ -47,7 +48,7 @@ function CadastroCategoria() {
         />
 
         <FormField
-          labelText={ 'Descrição:' }
+          labelText={ 'Descrição' }
           type={ 'text' }
           value={ category.description }
           name={ 'description' }
@@ -56,16 +57,16 @@ function CadastroCategoria() {
         />
         
         <FormField
-          labelText={ 'Cor:' }
+          labelText={ 'Cor' }
           type={ 'color' }
           value={ category.color }
           name='color'
           onChange={ handleChange }
         />
 
-        <button>
+        <Button to='/'>
           Cadastrar
-        </button>
+        </Button>
       </form>
 
       <ul>

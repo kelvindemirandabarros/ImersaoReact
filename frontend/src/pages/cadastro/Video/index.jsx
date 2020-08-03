@@ -1,5 +1,5 @@
 import React from 'react';
-import PagesBasis from '../../../components/PagesBasis/index.js';
+import PagesBasis from '../../../components/PagesBasis/index.jsx';
 import { Link } from 'react-router-dom';
 
 function CadastroVideo () {
